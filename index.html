@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abdulaziz Alqaissi | Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), url('https://www.transparenttextures.com/patterns/circuits.png');
+            background-size: 50px 50px, cover;
+            animation: backgroundScroll 30s linear infinite;
+        }
+        a {
+            color: #ff6347;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+           
+        }
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            animation: slideIn 1s ease-in-out;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Skills & Projects */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+        }
+        .contact-link {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes backgroundScroll {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 1000px 1000px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color:white">Abdulaziz Alqaissi</h1>
+    <p>Mechatronics and Robotics Engineering Student at Tafilah Technical University</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I’m Abdulaziz, a passionate first-year Mechatronics and Robotics Engineering student at Tafilah Technical University. I am driven by a fascination with how things work and an eagerness to apply innovative technology to solve real-world problems. Since I was young, I’ve been interested in the intersection of mechanical systems, electronics, and programming, which led me to pursue this dynamic and evolving field. As I continue my studies, I am excited to explore opportunities to apply my skills to real-world projects, internships, or research opportunities. My long-term goal is to contribute to the development of cutting-edge technologies in the robotics and automation industries. I am particularly interested in areas like AI-powered robotics, industrial automation, and smart systems.</p>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="grid-item">
+            <h3>Programming</h3>
+            <p>Learning multiple languages such as C++, Python, and MATLAB for robotics and automation projects.</p>
+        </div>
+        <div class="grid-item">
+            <h3>CAD & Design</h3>
+            <p>In the process of learning CAD modeling with SolidWorks and AutoCAD for creating mechanical designs.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Electronics</h3>
+            <p>Expanding knowledge in circuit design and microcontroller integration.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Problem-Solving</h3>
+            <p>Creative approach to tackling engineering challenges and technical issues.</p>
+        </div>
+        <div class="grid-item">
+            <h3>English Communication</h3>
+            <p>Effective written and verbal communication in English for technical collaboration.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:azuz44308@gmail.com" class="contact-link">azuz44308@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Abdulaziz Alqaissi | Portfolio</p>
+</footer>
+
+</body>
+</html>
